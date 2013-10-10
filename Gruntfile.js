@@ -154,9 +154,13 @@ module.exports = function (grunt) {
     },
     // not used since Uglify task does concat,
     // but still available if needed
-    /*concat: {
-      dist: {}
-    },*/
+    concat:{
+        json: {
+           src: ['app/data/products/*.json'],
+           dest: 'app/data/products/productDetails.json',
+           options: {banner:'[', footer:']', separator : ','}
+           }
+     },
     rev: {
       dist: {
         files: {

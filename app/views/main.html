@@ -1,9 +1,20 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<!--<div class="hero-unit">
+    <h1>'Allo, 'Allo!</h1>
+    <p>You now have</p>
+    <ul>
+        <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+    </ul>
+    <p>installed.</p>
+    <h3>Enjoy coding! - Yeoman</h3>
+</div>--!>
+<div class="items">
+    <h1></h1>
+    <ul class="list-unstyled list-inline">
+        <li ng-repeat="product in Products">
+        <div class="container-thumbnail">
+            <img ng-src="{{product.imageUrl}}" class="img-responsive img-thumbnail"/>
+            <div>{{product.name}}</div>
+        </div>
+        </li>
+    </ul>
 </div>
